@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -51,7 +52,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/foundation", {\
           "packageLocation": "./packages/foundation/",\
           "packageDependencies": [\
-            ["@brunogarcia/foundation-ds", "workspace:packages/foundation"]\
+            ["@brunogarcia/foundation-ds", "workspace:packages/foundation"],\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -61,7 +63,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/react/",\
           "packageDependencies": [\
             ["@brunogarcia/react-ds", "workspace:packages/react"],\
-            ["@brunogarcia/foundation-ds", "workspace:packages/foundation"]\
+            ["@brunogarcia/foundation-ds", "workspace:packages/foundation"],\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -72,7 +75,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@brunogarcia/storybook-ds", "workspace:packages/storybook"],\
             ["@brunogarcia/foundation-ds", "workspace:packages/foundation"],\
-            ["@brunogarcia/react-ds", "workspace:packages/react"]\
+            ["@brunogarcia/react-ds", "workspace:packages/react"],\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -81,9 +85,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["design-system-course", "workspace:."]\
+            ["design-system-course", "workspace:."],\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["typescript", [\
+        ["patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-6391300c18-7e2b9a9f4a.zip/node_modules/typescript/",\
+          "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=65a307"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]]\
     ]\

@@ -8,7 +8,7 @@ Create a new folder for the project and go to the folder
 mkdir design-system-course && cd $_
 ```
 
-Set the Yarn version to 3.5.0
+Set the Yarn version to 3
 
 ```shell
 yarn set version berry
@@ -75,3 +75,18 @@ The `react` package will use the `foundation` package, so we need to install it.
 ```shell
 yarn workspace @brunogarcia/react-ds add @brunogarcia/foundation-ds
 ```
+
+### Install TypeScript
+
+From the root of the project, install TypeScript as global dependency and also install it as a dev dependency for the `foundation`, `react`, and `storybook` packages.
+
+```shell
+yarn add typescript@4.7.2
+yarn workspace @brunogarcia/foundation-ds add -D typescript@4.7.2
+yarn workspace @brunogarcia/react-ds add -D typescript@4.7.2
+yarn workspace @brunogarcia/storybook-ds add -D typescript@4.7.2
+```
+
+### Configure TypeScript
+
+Create a `tsconfig.json` file in the root of the project and also on each package.

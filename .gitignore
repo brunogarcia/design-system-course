@@ -9,3 +9,6 @@
 # Documentation here: https://yarnpkg.com/features/zero-installs
 !.yarn/cache
 #.pnp.*
+
+# Ignore the lib folder inside packages
+packages/*/lib

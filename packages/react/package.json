@@ -1,7 +1,13 @@
 {
   "name": "@brunogarcia/react-ds",
   "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "@brunogarcia/foundation-ds": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "4.7.2"
   }
 }
