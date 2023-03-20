@@ -124,18 +124,18 @@ yarn add -D husky lint-staged
 Then, add the following scripts to the `package.json` file:
 
 ```json
-"husky": {
-  "hooks": {
-    "pre-commit": "lint-staged"
-  }
-}
-```
-
-```json
 "lint-staged": {
   "*.{js,jsx,ts,tsx}": [
     "yarn lint --fix",
     "git add"
   ]
 }
+```
+
+Configure Husky to run the linter before each commit:
+
+```shell
+npm pkg set scripts.prepare="husky install"
+npm run prepare
+npx husky add .husky/pre-commit "lint-staged"
 ```
