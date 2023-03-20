@@ -1,0 +1,9 @@
+{
+  "name": "@brunogarcia/storybook-ds",
+  "packageManager": "yarn@3.5.0",
+  "private": true,
+  "dependencies": {
+    "@brunogarcia/foundation-ds": "workspace:^",
+    "@brunogarcia/react-ds": "workspace:^"
+  }
+}

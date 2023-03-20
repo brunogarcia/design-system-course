@@ -1,0 +1,7 @@
+{
+  "name": "@brunogarcia/react-ds",
+  "packageManager": "yarn@3.5.0",
+  "dependencies": {
+    "@brunogarcia/foundation-ds": "workspace:^"
+  }
+}
