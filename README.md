@@ -76,7 +76,7 @@ The `react` package will use the `foundation` package, so we need to install it.
 yarn workspace @brunogarcia/react-ds add @brunogarcia/foundation-ds
 ```
 
-### Install TypeScript
+### Install and configure TypeScript
 
 From the root of the project, install TypeScript as global dependency and also install it as a dev dependency for the `foundation`, `react`, and `storybook` packages.
 
@@ -87,6 +87,28 @@ yarn workspace @brunogarcia/react-ds add -D typescript@4.7.2
 yarn workspace @brunogarcia/storybook-ds add -D typescript@4.7.2
 ```
 
-### Configure TypeScript
+Then, create a `tsconfig.json` file in the root of the project and also on each package.
 
-Create a `tsconfig.json` file in the root of the project and also on each package.
+### Install and configure ESLint and Prettier
+
+On the root of the project, create a `.eslintrc.js` and `.prettierrc` files.
+
+And also from the root of the project install the following dependencies:
+
+```shell
+yarn add -D prettier eslint eslint-plugin-react eslint-plugin-react-hooks \
+eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-config-prettier \
+@typescript-eslint/eslint-plugin @typescript-eslint/parser prettier
+```
+
+Then, add a new script called `lint` to the `package.json` file:
+
+```json
+"lint": "eslint --ignore-path .gitignore --quiet --no-error-on-unmatched-pattern packages/**/*{js,jsx,ts,tsx}"
+```
+
+Finally, test the linter by running the following command:
+
+```shell
+yarn lint
+```
