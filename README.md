@@ -112,3 +112,30 @@ Finally, test the linter by running the following command:
 ```shell
 yarn lint
 ```
+
+### Install and configure Husky and Lint Staged
+
+From the root of the project, install the following dependencies:
+
+```shell
+yarn add -D husky lint-staged
+```
+
+Then, add the following scripts to the `package.json` file:
+
+```json
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+}
+```
+
+```json
+"lint-staged": {
+  "*.{js,jsx,ts,tsx}": [
+    "yarn lint --fix",
+    "git add"
+  ]
+}
+```
