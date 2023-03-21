@@ -1,7 +1,12 @@
 {
   "name": "@brunogarcia/foundation-ds",
   "packageManager": "yarn@3.5.0",
+  "type": "module",
+  "scripts": {
+    "build-tokens": "style-dictionary build --config ./sd.config.json"
+  },
   "devDependencies": {
+    "style-dictionary": "^3.7.2",
     "typescript": "4.7.2"
   }
 }

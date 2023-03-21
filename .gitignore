@@ -13,3 +13,4 @@ node_modules
 
 # Ignore the lib folder inside packages
 packages/*/lib
+packages/foundation/src/tokens/js/tokens.js
