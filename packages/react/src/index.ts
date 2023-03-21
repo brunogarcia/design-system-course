@@ -1,3 +1,2 @@
-const Hello = (name?: string) => `${name || 'World'}`;
-
-export default Hello;
+export * from './Button';
+export * from './IconButton';
