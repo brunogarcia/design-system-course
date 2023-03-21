@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "lint": "eslint --fix --ignore-path .gitignore --quiet --no-error-on-unmatched-pattern packages/**/*{js,jsx,ts,tsx}",
+    "prettier": "prettier --write --ignore-path .gitignore packages/**/*{js,jsx,ts,tsx}",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -24,8 +25,10 @@
     "typescript": "4.7.2"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn lint"
+    "*.{js,ts,tsx}": [
+      "yarn lint",
+      "yarn prettier",
+      "git add"
     ]
   }
 }
