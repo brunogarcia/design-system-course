@@ -1,9 +1,13 @@
 {
   "name": "@brunogarcia/foundation-ds",
   "packageManager": "yarn@3.5.0",
-  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "build-tokens": "style-dictionary build --config ./sd.config.json"
+    "build": "yarn build-tokens && tsc",
+    "build-tokens": "style-dictionary build --config ./sd.config.json",
+    "build-tsc": "tsc --skipLibCheck",
+    "tsc-ve": "tsc --version"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.2",

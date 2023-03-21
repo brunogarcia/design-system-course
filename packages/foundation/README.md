@@ -10,4 +10,4 @@ Briefly, we will touch upon:
 
 ## Scripts
 
-- `yarn workspace @brunogarcia/foundation-ds run build-tokens`: Build the package.
+- `yarn workspace @brunogarcia/foundation-ds run build`: Build the package.
