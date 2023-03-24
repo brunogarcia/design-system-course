@@ -32,7 +32,7 @@ const flattenValue = (obj) => {
 };
 
 module.exports = {
-  prefix: 'bg-',
+  prefix: 'bruno-',
   theme: {
     colors: flattenValue(tokens.colors),
     borderRadius: flattenValue(tokens.radius),

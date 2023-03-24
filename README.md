@@ -139,3 +139,18 @@ npm pkg set scripts.prepare="husky install"
 npm run prepare
 npx husky add .husky/pre-commit "lint-staged"
 ```
+
+## Scripts
+
+### Build
+
+```shell
+yarn run build:foundation
+yarn run build:react
+```
+
+### Storybook
+
+```shell
+yarn run storybook
+```
