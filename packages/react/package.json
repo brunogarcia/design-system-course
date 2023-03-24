@@ -1,5 +1,6 @@
 {
   "name": "@brunogarcia/react-ds",
+  "version": "0.0.1",
   "packageManager": "yarn@3.5.0",
   "scripts": {
     "build": "yarn build:css && tsc",
