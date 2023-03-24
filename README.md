@@ -149,6 +149,12 @@ yarn run build:foundation
 yarn run build:react
 ```
 
+### Test
+
+```shell
+yarn run test:react
+```
+
 ### Storybook
 
 ```shell
