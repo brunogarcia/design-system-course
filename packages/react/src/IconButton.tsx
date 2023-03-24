@@ -6,7 +6,7 @@ export interface IconButtonProps extends React.ComponentProps<'button'> {
   /** Loading state */
   loading?: boolean;
   /** Aria title should be mandatory for icon buttons */
-  'aria-label'?: string;
+  'aria-label': string;
 }
 
 const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
